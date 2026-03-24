@@ -1,0 +1,14 @@
+{"courses":[{"id": 1, "name": "html full course", "price": 654, "rating": 9.8,"image":"http://localhost:3000/assets/html.jpg"
+},
+{
+    "id": 2,
+    "name": "css full course",
+    "price": 454,
+    "rating": 5.8,
+    "image": "http://localhost:3000/assets/css.jpg"
+},
+{ "id": 3,
+ "name": "js full course",
+"price": 659,   "rating": 7.8,
+    "image":"http://localhost:3000/assets/js.png"
+}]}
