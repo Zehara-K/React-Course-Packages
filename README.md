@@ -31,7 +31,7 @@ src/
 🚀 Getting Started
 1. Clone the repository
 bash
-git clone https://github.com/your-username/react-course-list.git
+git clone https://github.com/Zehara-K/react-course-list.git
 cd react-course-list
 2. Install dependencies
 bash
