@@ -1,33 +1,67 @@
-# React-Course-Packages
-A simple React application that displays a list of courses, lets users purchase them, and delete courses dynamically.
+# 📚 React Course Listing App
 
-✨ Features
-Fetch course data from a local JSON server using a custom hook (useFetch)
+A modern React application that displays a list of courses fetched from a local API. Users can explore courses, purchase them, and remove courses dynamically from the interface. This project demonstrates the use of **custom hooks**, **component-based architecture**, and **state management** in React.
 
-Display courses with details: name, image, price, and rating
+## 🚀 Features
 
-Simulate course purchase with a discount message
+* 📡 Fetch data from a mock API using a custom hook
+* 🧩 Reusable `useFetch` hook for clean data handling
+* 🛒 Purchase course functionality with UI feedback
+* ❌ Delete courses dynamically from the list
+* ⏳ Loading and error handling states
+* 🎯 Clean and modular component structure
 
-Delete courses dynamically from the list
+## 🛠️ Tech Stack
 
-Handle loading and error states gracefully
+* **Frontend:** React (Vite)
+* **Language:** JavaScript (ES6+)
+* **State Management:** React Hooks (`useState`, `useEffect`)
+* **Backend (Mock):** JSON Server
+* **Styling:** CSS
 
-🛠️ Tech Stack
-React (functional components, hooks)
+## 📂 Project Structure
 
-PropTypes (type checking)
+React-Course-Packages/
+│
+├── App.jsx              # Root component
+├── main.jsx             # Entry point
+├── courselist.jsx       # Displays list of courses
+├── project.jsx          # Course card component
+├── usefetch.jsx         # Custom hook for fetching data
+├── dummydata.json       # Mock API data
+├── index.css            # Styles
+└── README.md            # Project documentation
 
-JSON Server (mock backend for course data)
+## ⚙️ Getting Started
+### 1️⃣ Clone the Repository
+git clone https://github.com/Zehara-K/React-Course-Packages.git
+cd React-Course-Packages
 
-📂 Project Structure
-Code
-src/
- ├── Courselist.js   
- ├── Curse.js        
- ├── useFetch.js     
- └── data/
-      └── dummydata.json 
-      
-📌 Notes
-Deleting a course only updates the local state; changes won’t persist unless you edit the JSON file.
+### 2️⃣ Install Dependencies
+npm install
 
+### 3️⃣ Run JSON Server (Mock Backend)
+npx json-server --watch data/dummydata.json --port 3000 --static ./data
+
+### 4️⃣ Start the React App
+npm run dev
+
+## 🌐 API Endpoint
+http://localhost:3000/courses
+
+## 🧠 Key Concepts Implemented
+### 🔹 Custom Hook (`useFetch`)
+
+* Encapsulates fetching logic
+* Handles loading and error states
+* Improves code reusability
+
+### 🔹 Component-Based Design
+
+* `Courselist` → Handles list rendering
+* `Curse` (Course Card) → Displays individual course details
+
+### 🔹 State Management
+
+* Tracks purchased courses
+* Dynamically updates UI on delete
