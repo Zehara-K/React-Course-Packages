@@ -22,32 +22,12 @@ JSON Server (mock backend for course data)
 📂 Project Structure
 Code
 src/
- ├── Courselist.js   # Renders course list
- ├── Curse.js        # Course card component
- ├── useFetch.js     # Custom hook for fetching data
+ ├── Courselist.js   
+ ├── Curse.js        
+ ├── useFetch.js     
  └── data/
-      └── dummydata.json  # Sample course data
+      └── dummydata.json 
       
-🚀 Getting Started
-1. Clone the repository
-bash
-git clone https://github.com/Zehara-K/react-course-list.git
-cd react-course-list
-2. Install dependencies
-bash
-npm install
-3. Start JSON Server
-bash
-npx json-server --watch data/dummydata.json --port 3000 --static ./data
-4. Run React app
-bash
-npm start
-5. Open in browser
-Visit:
-
-Code
-http://localhost:3000
-
 📌 Notes
 Deleting a course only updates the local state; changes won’t persist unless you edit the JSON file.
 
